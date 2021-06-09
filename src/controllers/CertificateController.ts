@@ -3,8 +3,8 @@ import { Certificate } from '@models/Certificate'
 
 import fs from 'fs'
 
-import getTemplate from 'src/services/template'
-import generatePdf from 'src/services/pdf'
+import getTemplate from '@services/template'
+import generatePdf from '@services/pdf'
 
 export default {
   async generate(req: Request, res: Response) {
