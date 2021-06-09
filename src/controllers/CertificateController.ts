@@ -23,6 +23,7 @@ export default {
       res.send(pdf)
     } catch (error) {
       console.log(error)
+      res.send({ errorMessage: error })
     }
   }
 }

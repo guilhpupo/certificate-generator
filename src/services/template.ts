@@ -13,5 +13,6 @@ export default async (url: string, certificate: Certificate) => {
     return template(certificate)
   } catch (error) {
     console.log(error)
+    return `<p>${error}</p>`
   }
 }
